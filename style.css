@@ -594,6 +594,10 @@ body {
   background-size: 35px 25px;
 }
 
+.site-content {
+  padding-top: 150px;
+}
+
 @media (max-width: 757px) {
   #toggleS {
     height: 3.157rem;
@@ -716,6 +720,11 @@ h2 {
   font-size: 2.369rem;
   font-weight: 700;
   color: #0e82b0;
+}
+
+h2 a {
+  color: #0e82b0;
+  text-decoration: none;
 }
 
 h3 {

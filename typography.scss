@@ -56,6 +56,11 @@ h2{
 	font-size: $med-large;
 	font-weight: 700;
 	color: $secondaryColor;
+
+	a{
+		color: $secondaryColor;
+		text-decoration: none;
+	}
 }
 
 h3{

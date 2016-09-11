@@ -41,7 +41,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<!-- <footer class="entry-footer">
 		<?php skyler_bird_blog_theme_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

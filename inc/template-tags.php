@@ -13,9 +13,6 @@ if ( ! function_exists( 'skyler_bird_blog_theme_posted_on' ) ) :
  */
 function skyler_bird_blog_theme_posted_on() {
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
-	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
-	}
 
 	$time_string = sprintf( $time_string,
 		esc_attr( get_the_date( 'c' ) ),
@@ -66,15 +63,15 @@ function skyler_bird_blog_theme_entry_footer() {
 		echo '</span>';
 	}
 
-	edit_post_link(
-		sprintf(
-			/* translators: %s: Name of current post */
-			esc_html__( 'Edit %s', 'skyler-bird-blog-theme' ),
-			the_title( '<span class="screen-reader-text">"', '"</span>', false )
-		),
-		'<span class="edit-link">',
-		'</span>'
-	);
+	// edit_post_link(
+	// 	sprintf(
+	// 		/* translators: %s: Name of current post */
+	// 		esc_html__( 'Edit %s', 'skyler-bird-blog-theme' ),
+	// 		the_title( '<span class="screen-reader-text">"', '"</span>', false )
+	// 	),
+	// 	'<span class="edit-link">',
+	// 	'</span>'
+	// );
 }
 endif;
 

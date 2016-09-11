@@ -14,6 +14,22 @@ $large:     3.157rem;
 $ex-large:  5.61rem;
 $max:       7.478rem;
 
+$span_1:  6.25vw;
+$span_2:  12.5vw;
+$span_3:  18.75vw;
+$span_4:  25vw;
+$span_5:  31.25vw;
+$span_6:  37.5vw;
+$span_7:  43.75vw;
+$span_8:  50.25vw;
+$span_9:  56.75vw;
+$span_10: 63vw;
+$span_11: 69.25vw;
+$span_12: 75.5vw;
+$span_13: 81.75vw;
+$span_14: 88vw;
+$span_15: 94.25vw;
+$span_16: 100vw;
 
 //Universal Styles
 *{
@@ -27,9 +43,6 @@ body{
 
 
 //Navigation
-/*
-* Navigation Styles
-*/
 .blogNav{
   position: fixed;
   width: 100%;
@@ -111,6 +124,63 @@ body{
 	    background-size: 35px 25px;
 	  }
 }
+
+//Post formatting
+.entry-footer{
+	//display: none;
+}
+
+article.post{
+	//display: flex;
+	margin: $span_1 0 $span_1 $span_1;
+	width: $span_10;
+	position: relative;
+	overflow: hidden;
+
+	.entry-header, .entry-meta,  .entry-content, .attachment-post-thumbnail{
+		display: inline-block;
+	}
+
+	.attachment-post-thumbnail{
+		width: $span_2;
+		height: $span_2;
+	}
+
+	.entry-header{
+		position: absolute;
+		top: 0;
+		padding-left: 3%;
+		width: $span_7;
+	}
+
+	.entry-title{
+		margin: 3% 0 5px;
+	}
+
+	.entry-content{
+		width: $span_7;
+		position: absolute;
+		top: 75px;
+		padding-left: 3%;
+
+			p{
+				padding: 0;
+			}
+	}
+
+	.entry-meta{
+		font-size: $ex-small;
+		font-weight: 100;
+	}
+}
+
+
+
+
+
+
+
+
 
 //Wordpress Fixes
 .site-content{

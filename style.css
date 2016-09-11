@@ -510,9 +510,6 @@ body {
   overflow-x: hidden;
 }
 
-/*
-* Navigation Styles
-*/
 .blogNav {
   position: fixed;
   width: 100%;
@@ -592,6 +589,49 @@ body {
 .blogNav #social4 {
   background-image: url(http://www.skylerbird.com/img/behance.svg);
   background-size: 35px 25px;
+}
+
+article.post {
+  margin: 6.25vw 0 6.25vw 6.25vw;
+  width: 63vw;
+  position: relative;
+  overflow: hidden;
+}
+
+article.post .entry-header, article.post .entry-meta, article.post .entry-content, article.post .attachment-post-thumbnail {
+  display: inline-block;
+}
+
+article.post .attachment-post-thumbnail {
+  width: 12.5vw;
+  height: 12.5vw;
+}
+
+article.post .entry-header {
+  position: absolute;
+  top: 0;
+  padding-left: 3%;
+  width: 43.75vw;
+}
+
+article.post .entry-title {
+  margin: 3% 0 5px;
+}
+
+article.post .entry-content {
+  width: 43.75vw;
+  position: absolute;
+  top: 75px;
+  padding-left: 3%;
+}
+
+article.post .entry-content p {
+  padding: 0;
+}
+
+article.post .entry-meta {
+  font-size: 0.75rem;
+  font-weight: 100;
 }
 
 .site-content {
@@ -735,7 +775,7 @@ h3 {
 p, article {
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.333rem;
+  line-height: 1.5em;
 }
 
 html {

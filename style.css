@@ -800,7 +800,11 @@ body {
 .homepage-content hr {
   width: 56.75vw;
   float: left;
-  margin: 6.25vw 0 6.25vw 6.25vw;
+  margin: 3.125vw 0 3.125vw 6.25vw;
+}
+
+.entry-date {
+  color: #242424;
 }
 
 .header-image {
@@ -821,6 +825,11 @@ body {
 
 #facebook, .fb-page {
   width: 12.5vw;
+}
+
+#timeline-widget {
+  width: 12.5vw;
+  height: 500px;
 }
 
 .site-content {
@@ -938,6 +947,11 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   color: #242424;
   background-color: #ffffff;
+}
+
+a {
+  color: #0e82b0;
+  text-decoration: none;
 }
 
 h1 {

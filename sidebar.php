@@ -18,4 +18,8 @@ data-small-header="false" data-adapt-container-width="true"
  cite="https://www.facebook.com/SkylerBirdDesigns/" class="fb-xfbml-parse-ignore">
  <a href="https://www.facebook.com/SkylerBirdDesigns/">Skyler Bird - Web Design</a>
 </blockquote></div>
+<br>
+<a class="twitter-timeline" data-height="400"
+href="https://twitter.com/Skylerdesigns">Tweets by Skylerdesigns</a>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </aside><!-- #secondary -->

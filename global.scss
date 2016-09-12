@@ -172,7 +172,11 @@ body{
 .homepage-content hr{
 	width: $span_9;
 	float: left;
-	margin: $span_1 0 $span_1 $span_1;
+	margin: 3.125vw 0 3.125vw $span_1;
+}
+
+.entry-date{
+	color: $primaryColor;
 }
 
 .header-image{
@@ -193,6 +197,11 @@ body{
 
 #facebook, .fb-page{
 	width: $span_2;
+}
+
+#timeline-widget{
+	width: $span_2;
+	height: 500px;
 }
 
 //Wordpress Fixes

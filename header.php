@@ -26,9 +26,9 @@
 	            <div class="navA navAr"></div>
 
 	            <ul>
-	              <a href="#profile"><li>PROFILE</li></a>
-	              <a href="#portfolio"><li>PORTFOLIO</li></a>
-	              <a href="#contact"><li>CONTACT</li></a>
+	              <a href="localhost/sbblog"><li>BLOG</li></a>
+	              <a href="http://www.skylerbird.com/"><li>HOME</li></a>
+	              <a href="http://www.skylerbird.com/#contact"><li>CONTACT</li></a>
 	            </ul>
 
 	            <div class="socialContainer">

@@ -125,14 +125,9 @@ body{
 	  }
 }
 
-//Post formatting
-.entry-footer{
-	//display: none;
-}
-
-article.post{
-	//display: flex;
-	margin: $span_1 0 $span_1 $span_1;
+//Post formatting on homepage
+.homepage-content article.post{
+	margin: 0 0 0 $span_1;
 	width: $span_10;
 	position: relative;
 	overflow: hidden;
@@ -174,17 +169,35 @@ article.post{
 	}
 }
 
+.homepage-content hr{
+	width: $span_9;
+	float: left;
+	margin: $span_1 0 $span_1 $span_1;
+}
 
+.header-image{
+	width: $span_16;
+	height: $span_3;
+	background-image: url(http://www.skylerbird.com/img/BG.jpg);
+	background-size: cover;
+	background-position: center;
+}
 
+.widget-area{
+	display: block;
+	position: absolute;
+	right: $span_1;
+	top: $span_4;
+	width: $span_2;
+}
 
-
-
-
-
+#facebook, .fb-page{
+	width: $span_2;
+}
 
 //Wordpress Fixes
 .site-content{
-	padding-top: 150px;
+	padding-top: $span_1;
 }
 
 
@@ -203,7 +216,7 @@ article.post{
 
 
 
-
+//Media queries
 @media (max-width: 757px){
   #toggleS{
     height: $large;
@@ -228,10 +241,6 @@ article.post{
   .down{
     margin-top: 200px;
   }
-
-  // #toggler:checked ~ #toggleS{
-  //
-  // }
 
 .blogNav{
   height: auto;

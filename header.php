@@ -44,6 +44,5 @@
 
 	            <div class="navA navAl"></div>
 	          </nav>
-						<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-						<script src="http://www.skylerbird.com/js/nav.js"></script>
+						<div class="header-image"></div>
 						<div id="content" class="site-content">

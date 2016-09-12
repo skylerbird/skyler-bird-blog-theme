@@ -501,283 +501,6 @@ object {
   display: block;
 }
 
-* {
-  Transition: ease-in-out 0.3s;
-  box-sizing: border-box;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-.blogNav {
-  position: fixed;
-  width: 100%;
-  height: 55px;
-  background-color: #242424;
-  color: #ffffff;
-  z-index: 3;
-  top: 0;
-}
-
-.blogNav .navA {
-  position: absolute;
-  display: inline;
-  height: 100%;
-  width: 20px;
-  background-color: #0e82b0;
-}
-
-.blogNav .navAl {
-  left: 0;
-}
-
-.blogNav .navAr {
-  right: 0;
-}
-
-.blogNav ul {
-  margin: 25px 0 0px 55px;
-}
-
-.blogNav ul, .blogNav li {
-  list-style: none;
-  display: inline-block;
-  color: #ffffff;
-  word-spacing: 25px;
-  letter-spacing: 2px;
-}
-
-.blogNav li:hover {
-  color: #0e82b0;
-}
-
-.blogNav .socialContainer {
-  display: inline-block;
-  float: right;
-  margin-right: 105px;
-}
-
-.blogNav .social {
-  width: 35px;
-  height: 35px;
-  background-color: #ffffff;
-  display: inline-block;
-  margin: 10px 0 0 25px;
-  border-radius: 20%;
-  background-size: 25px 25px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.blogNav .social:hover {
-  background-color: #0e82b0;
-}
-
-.blogNav #social1 {
-  background-image: url(http://www.skylerbird.com/img/facebook-f.svg);
-}
-
-.blogNav #social2 {
-  background-image: url(http://www.skylerbird.com/img/twitter.svg);
-}
-
-.blogNav #social3 {
-  background-image: url(http://www.skylerbird.com/img/instagram.svg);
-}
-
-.blogNav #social4 {
-  background-image: url(http://www.skylerbird.com/img/behance.svg);
-  background-size: 35px 25px;
-}
-
-article.post {
-  margin: 6.25vw 0 6.25vw 6.25vw;
-  width: 63vw;
-  position: relative;
-  overflow: hidden;
-}
-
-article.post .entry-header, article.post .entry-meta, article.post .entry-content, article.post .attachment-post-thumbnail {
-  display: inline-block;
-}
-
-article.post .attachment-post-thumbnail {
-  width: 12.5vw;
-  height: 12.5vw;
-}
-
-article.post .entry-header {
-  position: absolute;
-  top: 0;
-  padding-left: 3%;
-  width: 43.75vw;
-}
-
-article.post .entry-title {
-  margin: 3% 0 5px;
-}
-
-article.post .entry-content {
-  width: 43.75vw;
-  position: absolute;
-  top: 75px;
-  padding-left: 3%;
-}
-
-article.post .entry-content p {
-  padding: 0;
-}
-
-article.post .entry-meta {
-  font-size: 0.75rem;
-  font-weight: 100;
-}
-
-.site-content {
-  padding-top: 150px;
-}
-
-@media (max-width: 757px) {
-  #toggleS {
-    height: 3.157rem;
-    width: 3.157rem;
-    background-color: #242424;
-    display: block;
-    border-radius: 1rem;
-    position: fixed;
-    z-index: 3;
-    top: 1rem;
-    right: 1rem;
-    background-image: url(http://www.skylerbird.com/img/navicon.svg);
-    background-size: 2.369rem;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  #toggleS:hover, #toggleS:focus {
-    background-image: url(http://www.skylerbird.com/img/navicon-d.svg);
-  }
-  .down {
-    margin-top: 200px;
-  }
-  .blogNav {
-    height: auto;
-    padding: 25px;
-    width: 90%;
-    left: 5%;
-    margin-top: -500px;
-    border-radius: 1rem;
-  }
-  .blogNav .navA {
-    display: none;
-  }
-  .blogNav ul, .blogNav .socialContainer {
-    margin: 0;
-    padding: 0;
-  }
-  .blogNav li {
-    display: block;
-    line-height: 2.369rem;
-    padding: 0;
-  }
-  .blogNav .social {
-    display: block;
-    padding: 0;
-    margin-bottom: 25px;
-  }
-  .blogNav .mBreak {
-    display: inline-block;
-  }
-  .open {
-    margin-top: 1rem;
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  clear: both;
-}
-
-p {
-  margin-bottom: 1.5em;
-}
-
-dfn, cite, em, i {
-  font-style: italic;
-}
-
-blockquote {
-  margin: 0 1.5em;
-}
-
-address {
-  margin: 0 0 1.5em;
-}
-
-pre {
-  background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 1.6;
-  margin-bottom: 1.6em;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1.6em;
-}
-
-code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 15px;
-  font-size: 0.9375rem;
-}
-
-abbr, acronym {
-  border-bottom: 1px dotted #666;
-  cursor: help;
-}
-
-mark, ins {
-  background: #fff9c0;
-  text-decoration: none;
-}
-
-big {
-  font-size: 1.777rem;
-}
-
-body {
-  font-family: "Source Sans Pro", sans-serif;
-  color: #242424;
-  background-color: #ffffff;
-}
-
-h1 {
-  font-size: 3.157rem;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 2.369rem;
-  font-weight: 700;
-  color: #0e82b0;
-}
-
-h2 a {
-  color: #0e82b0;
-  text-decoration: none;
-}
-
-h3 {
-  font-size: 1.777rem;
-  font-weight: 700;
-}
-
-p, article {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5em;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -939,4 +662,307 @@ textarea:focus {
 
 textarea {
   width: 100%;
+}
+
+* {
+  Transition: ease-in-out 0.3s;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.blogNav {
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  background-color: #242424;
+  color: #ffffff;
+  z-index: 3;
+  top: 0;
+}
+
+.blogNav .navA {
+  position: absolute;
+  display: inline;
+  height: 100%;
+  width: 20px;
+  background-color: #0e82b0;
+}
+
+.blogNav .navAl {
+  left: 0;
+}
+
+.blogNav .navAr {
+  right: 0;
+}
+
+.blogNav ul {
+  margin: 25px 0 0px 55px;
+}
+
+.blogNav ul, .blogNav li {
+  list-style: none;
+  display: inline-block;
+  color: #ffffff;
+  word-spacing: 25px;
+  letter-spacing: 2px;
+}
+
+.blogNav li:hover {
+  color: #0e82b0;
+}
+
+.blogNav .socialContainer {
+  display: inline-block;
+  float: right;
+  margin-right: 105px;
+}
+
+.blogNav .social {
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  display: inline-block;
+  margin: 10px 0 0 25px;
+  border-radius: 20%;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blogNav .social:hover {
+  background-color: #0e82b0;
+}
+
+.blogNav #social1 {
+  background-image: url(http://www.skylerbird.com/img/facebook-f.svg);
+}
+
+.blogNav #social2 {
+  background-image: url(http://www.skylerbird.com/img/twitter.svg);
+}
+
+.blogNav #social3 {
+  background-image: url(http://www.skylerbird.com/img/instagram.svg);
+}
+
+.blogNav #social4 {
+  background-image: url(http://www.skylerbird.com/img/behance.svg);
+  background-size: 35px 25px;
+}
+
+.homepage-content article.post {
+  margin: 0 0 0 6.25vw;
+  width: 63vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.homepage-content article.post .entry-header, .homepage-content article.post .entry-meta, .homepage-content article.post .entry-content, .homepage-content article.post .attachment-post-thumbnail {
+  display: inline-block;
+}
+
+.homepage-content article.post .attachment-post-thumbnail {
+  width: 12.5vw;
+  height: 12.5vw;
+}
+
+.homepage-content article.post .entry-header {
+  position: absolute;
+  top: 0;
+  padding-left: 3%;
+  width: 43.75vw;
+}
+
+.homepage-content article.post .entry-title {
+  margin: 3% 0 5px;
+}
+
+.homepage-content article.post .entry-content {
+  width: 43.75vw;
+  position: absolute;
+  top: 75px;
+  padding-left: 3%;
+}
+
+.homepage-content article.post .entry-content p {
+  padding: 0;
+}
+
+.homepage-content article.post .entry-meta {
+  font-size: 0.75rem;
+  font-weight: 100;
+}
+
+.homepage-content hr {
+  width: 56.75vw;
+  float: left;
+  margin: 6.25vw 0 6.25vw 6.25vw;
+}
+
+.header-image {
+  width: 100vw;
+  height: 18.75vw;
+  background-image: url(http://www.skylerbird.com/img/BG.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.widget-area {
+  display: block;
+  position: absolute;
+  right: 6.25vw;
+  top: 25vw;
+  width: 12.5vw;
+}
+
+#facebook, .fb-page {
+  width: 12.5vw;
+}
+
+.site-content {
+  padding-top: 6.25vw;
+}
+
+@media (max-width: 757px) {
+  #toggleS {
+    height: 3.157rem;
+    width: 3.157rem;
+    background-color: #242424;
+    display: block;
+    border-radius: 1rem;
+    position: fixed;
+    z-index: 3;
+    top: 1rem;
+    right: 1rem;
+    background-image: url(http://www.skylerbird.com/img/navicon.svg);
+    background-size: 2.369rem;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #toggleS:hover, #toggleS:focus {
+    background-image: url(http://www.skylerbird.com/img/navicon-d.svg);
+  }
+  .down {
+    margin-top: 200px;
+  }
+  .blogNav {
+    height: auto;
+    padding: 25px;
+    width: 90%;
+    left: 5%;
+    margin-top: -500px;
+    border-radius: 1rem;
+  }
+  .blogNav .navA {
+    display: none;
+  }
+  .blogNav ul, .blogNav .socialContainer {
+    margin: 0;
+    padding: 0;
+  }
+  .blogNav li {
+    display: block;
+    line-height: 2.369rem;
+    padding: 0;
+  }
+  .blogNav .social {
+    display: block;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  .blogNav .mBreak {
+    display: inline-block;
+  }
+  .open {
+    margin-top: 1rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0 1.5em;
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+
+code, kbd, tt, var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+
+big {
+  font-size: 1.777rem;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #242424;
+  background-color: #ffffff;
+}
+
+h1 {
+  font-size: 3.157rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.369rem;
+  font-weight: 700;
+  color: #0e82b0;
+}
+
+h2 a {
+  color: #0e82b0;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 1.777rem;
+  font-weight: 700;
+}
+
+p, article {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5em;
 }

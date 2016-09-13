@@ -1,28 +1,16 @@
-html {
-	box-sizing: border-box;
-}
-
 *,
 *:before,
-*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-	box-sizing: inherit;
-}
+*:after {box-sizing: inherit;}
 
-body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
-}
+body {background: #fff;}
 
 blockquote:before,
 blockquote:after,
 q:before,
-q:after {
-	content: "";
-}
+q:after {content: "";}
 
 blockquote,
-q {
-	quotes: "" "";
-}
+q {quotes: "" "";}
 
 hr {
 	background-color: #ccc;
@@ -32,17 +20,11 @@ hr {
 }
 
 ul,
-ol {
-	margin: 0 0 1.5em 3em;
-}
+ol {margin: 0 0 1.5em 3em;}
 
-ul {
-	list-style: disc;
-}
+ul {list-style: disc;}
 
-ol {
-	list-style: decimal;
-}
+ol {list-style: decimal;}
 
 li > ul,
 li > ol {
@@ -50,17 +32,13 @@ li > ol {
 	margin-left: 1.5em;
 }
 
-dt {
-	font-weight: bold;
-}
+dt {font-weight: bold;}
 
-dd {
-	margin: 0 1.5em 1.5em;
-}
+dd {margin: 0 1.5em 1.5em;}
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+	height: auto;
+	max-width: 100%;
 }
 
 table {
@@ -68,9 +46,7 @@ table {
 	width: 100%;
 }
 
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
+//Forms
 button,
 input[type="button"],
 input[type="reset"],
@@ -130,9 +106,7 @@ textarea {
 	padding: 3px;
 }
 
-select {
-	border: 1px solid #ccc;
-}
+select {border: 1px solid #ccc;}
 
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -153,6 +127,4 @@ textarea:focus {
 	color: #111;
 }
 
-textarea {
-	width: 100%;
-}
+textarea {width: 100%;}

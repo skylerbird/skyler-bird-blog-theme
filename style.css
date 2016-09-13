@@ -754,45 +754,48 @@ body {
   background-size: 35px 25px;
 }
 
-.homepage-content article.post {
+.homepage-content article.has-post-thumbnail {
   margin: 0 0 0 6.25vw;
   width: 63vw;
   position: relative;
   overflow: hidden;
 }
 
-.homepage-content article.post .entry-header, .homepage-content article.post .entry-meta, .homepage-content article.post .entry-content, .homepage-content article.post .attachment-post-thumbnail {
+.homepage-content article.has-post-thumbnail .entry-header, .homepage-content article.has-post-thumbnail .entry-meta, .homepage-content article.has-post-thumbnail .entry-content, .homepage-content article.has-post-thumbnail .attachment-post-thumbnail {
   display: inline-block;
 }
 
-.homepage-content article.post .attachment-post-thumbnail {
+.homepage-content article.has-post-thumbnail .attachment-post-thumbnail {
   width: 12.5vw;
   height: 12.5vw;
 }
 
-.homepage-content article.post .entry-header {
+.homepage-content article.has-post-thumbnail .entry-header {
   position: absolute;
   top: 0;
   padding-left: 3%;
   width: 43.75vw;
 }
 
-.homepage-content article.post .entry-title {
+.homepage-content article.has-post-thumbnail .entry-title {
   margin: 3% 0 5px;
+  line-height: 1em;
 }
 
-.homepage-content article.post .entry-content {
+.homepage-content article.has-post-thumbnail .entry-content {
   width: 43.75vw;
   position: absolute;
-  top: 75px;
+  top: 95px;
   padding-left: 3%;
+  background-color: #ffffff;
 }
 
-.homepage-content article.post .entry-content p {
+.homepage-content article.has-post-thumbnail .entry-content p {
   padding: 0;
+  margin: 0;
 }
 
-.homepage-content article.post .entry-meta {
+.homepage-content article.has-post-thumbnail .entry-meta {
   font-size: 0.75rem;
   font-weight: 100;
 }
@@ -830,6 +833,19 @@ body {
 #timeline-widget {
   width: 12.5vw;
   height: 500px;
+}
+
+.homepage-content article:not(.has-post-thumbnail) {
+  margin: 0 0 0 6.25vw;
+  width: 63vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.homepage-content article:not(.has-post-thumbnail) .entry-meta {
+  font-size: 0.75rem;
+  font-weight: 100;
+  margin-top: -20px;
 }
 
 .site-content {
@@ -893,10 +909,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-}
-
-p {
-  margin-bottom: 1.5em;
 }
 
 dfn, cite, em, i {

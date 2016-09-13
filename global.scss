@@ -126,7 +126,9 @@ body{
 }
 
 //Post formatting on homepage
-.homepage-content article.post{
+
+//Set post styles for posts with a featured image
+.homepage-content article.has-post-thumbnail{
 	margin: 0 0 0 $span_1;
 	width: $span_10;
 	position: relative;
@@ -150,16 +152,19 @@ body{
 
 	.entry-title{
 		margin: 3% 0 5px;
+		line-height: 1em;
 	}
 
 	.entry-content{
 		width: $span_7;
 		position: absolute;
-		top: 75px;
+		top: 95px;
 		padding-left: 3%;
+		background-color: $bgColor;
 
 			p{
 				padding: 0;
+				margin: 0;
 			}
 	}
 
@@ -202,6 +207,20 @@ body{
 #timeline-widget{
 	width: $span_2;
 	height: 500px;
+}
+
+//Styles for posts without a featured image
+.homepage-content article:not(.has-post-thumbnail){
+	margin: 0 0 0 $span_1;
+	width: $span_10;
+	position: relative;
+	overflow: hidden;
+
+	.entry-meta{
+		font-size: $ex-small;
+		font-weight: 100;
+		margin-top: -20px;
+	}
 }
 
 //Wordpress Fixes

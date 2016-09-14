@@ -209,6 +209,8 @@ body { overflow-x: hidden; }
 
 .homepage-content article .entry-meta { font-size: 0.75rem; font-weight: 100; }
 
+.homepage-content article .entry-content img { display: none; }
+
 .homepage-content hr { width: 56.75vw; float: left; margin: 3.125vw 0 3.125vw 6.25vw; }
 
 .entry-date { color: #242424; }
@@ -227,11 +229,25 @@ body { overflow-x: hidden; }
 
 .homepage-content article:not(.has-post-thumbnail) .entry-meta { margin-top: -20px; }
 
+.homepage-content .nav-links { padding-top: 6.25vw; }
+
 .widget-area { display: block; position: absolute; right: 6.25vw; top: 25vw; width: 12.5vw; }
 
 #facebook, .fb-page { width: 12.5vw; }
 
 #timeline-widget { width: 12.5vw; height: 500px; }
+
+footer { background-color: #242424; width: 100vw; display: block; height: 120px; margin-top: 6.25vw; }
+
+footer .social-links { width: 37.5vw; margin-left: 6.25vw; padding-top: 2.369rem; display: inline-block; float: left; }
+
+footer .social-icon { height: 20px; width: 45px; display: inline-block; fill: #ffffff; padding-right: 1rem; }
+
+footer .social-icon:hover, footer .social-icon:focus { fill: #0e82b0; }
+
+footer .mini-logo { width: 31.25vw; display: inline-block; float: right; padding-top: 1rem; margin-right: 6.25vw; color: #ffffff; font-size: 3.157rem; text-align: right; }
+
+footer .mini-logo .mini-logo-sub { font-size: 1.333rem; color: #0e82b0; width: 100%; display: block; margin-top: -1rem; padding-right: 5px; }
 
 .site-content { padding-top: 6.25vw; }
 

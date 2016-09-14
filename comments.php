@@ -79,7 +79,37 @@ if ( post_password_required() ) {
 	<?php
 	endif;
 
-	comment_form();
+	//comment_form();
 	?>
+	<?php $comment_args = array( 'title_reply'=>'Please leave a comment',
 
+	'fields' => apply_filters( 'comment_form_default_fields', array(
+
+	'author' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Your Name' ) . '</label> ' .
+
+	        '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></p>',
+
+	    'email'  => '<p class="comment-form-email">' .
+
+	                '<label for="email">' . __( 'Your Email' ) . '</label> ' .
+
+
+
+	                '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' />'.'</p>',
+
+	    'url'    => '' ) ),
+
+	    'comment_field' => '<p>' .
+
+	                '<label for="comment">' . __( 'Your Comment' ) . '</label>' .
+
+	                '<textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>' .
+
+	                '</p>',
+
+	    'comment_notes_after' => '',
+
+	);
+
+	comment_form($comment_args); ?>
 </div><!-- #comments -->

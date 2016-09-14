@@ -155,20 +155,6 @@ img { height: auto; max-width: 100%; }
 
 table { margin: 0 0 1.5em; width: 100%; }
 
-button, input[type="button"], input[type="reset"], input[type="submit"] { border: 1px solid; border-color: #ccc #ccc #bbb; border-radius: 3px; background: #e6e6e6; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05); color: rgba(0, 0, 0, 0.8); font-size: 12px; font-size: 0.75rem; line-height: 1; padding: .6em 1em .4em; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-
-button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { border-color: #ccc #bbb #aaa; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-
-button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active { border-color: #aaa #bbb #bbb; box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
-
-input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea { color: #666; border: 1px solid #ccc; border-radius: 3px; padding: 3px; }
-
-select { border: 1px solid #ccc; }
-
-input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus { color: #111; }
-
-textarea { width: 100%; }
-
 * { transition: ease-in-out 0.3s; box-sizing: border-box; }
 
 body { overflow-x: hidden; }
@@ -248,6 +234,46 @@ footer .social-icon:hover, footer .social-icon:focus { fill: #0e82b0; }
 footer .mini-logo { width: 31.25vw; display: inline-block; float: right; padding-top: 1rem; margin-right: 6.25vw; color: #ffffff; font-size: 3.157rem; text-align: right; }
 
 footer .mini-logo .mini-logo-sub { font-size: 1.333rem; color: #0e82b0; width: 100%; display: block; margin-top: -1rem; padding-right: 5px; }
+
+.post-page { width: 100vw; }
+
+.post-page .attachment-post-thumbnail { display: none; }
+
+.post-page article { width: 88vw; padding-left: 6.25vw; }
+
+.post-page .entry-title { margin: 0; padding-bottom: 1rem; }
+
+.post-page .entry-content { width: 56.75vw; }
+
+.post-page hr { margin: 2.369rem 0 6.25vw 6.25vw; width: 56.75vw; }
+
+.post-page .comments-area { width: 100vw; padding-left: 6.25vw; }
+
+.post-page .comments-area p { margin: 0; }
+
+.post-page .comments-area p.comment-notes { display: none; }
+
+.post-page .comments-area .comment-form-comment, .post-page .comments-area .comments-area, .post-page .comments-area .comment-respond { width: 63vw; }
+
+.post-page .comments-area .comment-reply-title { margin: 0 0 2.369rem 0; }
+
+.post-page .comments-area .comment-form-author, .post-page .comments-area .comment-form-email { width: 25vw; margin: 0 6.25vw 0 0; display: inline-block; }
+
+.post-page .comments-area .comment-form-author input, .post-page .comments-area .comment-form-email input { width: 18.75vw; font-size: 1rem; }
+
+.post-page .comments-area input[type=text], .post-page .comments-area input[type=email] { width: 100%; }
+
+.post-page .comments-area label { display: block; font-weight: 700; margin-bottom: 3px; }
+
+.post-page .comments-area textarea#comment { width: 56.75vw; }
+
+.post-page .comments-area textarea, .post-page .comments-area input[type=text], .post-page .comments-area input[type=email] { border: 1px solid #242424; background-color: #ffffff; border-radius: 0; padding: 5px 5px; margin-bottom: 2.369rem; }
+
+.post-page .comments-area textarea:focus, .post-page .comments-area input[type=text]:focus, .post-page .comments-area input[type=email]:focus { border: 1px solid #0e82b0; }
+
+.post-page .comments-area .submit { width: 12.5vw; height: 2.369rem; font-size: 1rem; display: block; margin: 0 6.25vw 0 0; color: #ffffff; background-color: #242424; border: none; padding: 0; float: right; }
+
+.post-page .comments-area .submit:hover, .post-page .comments-area .submit:focus { background-color: #0e82b0; }
 
 .site-content { padding-top: 6.25vw; }
 

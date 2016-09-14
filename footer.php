@@ -16,7 +16,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="social-links">
 			<!-- Facebook -->
-			<a href="#">
+			<a href="https://www.facebook.com/SkylerBirdDesigns">
 				<svg width="45" height="20" class="social-icon" viewBox="0 0 1792 1792"
 				xmlns="http://www.w3.org/2000/svg">
 				<path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39
@@ -26,7 +26,7 @@
 			</a>
 
 			<!-- Twitter -->
-			<a href="#">
+			<a href="https://twitter.com/Skylerdesigns">
 				<svg width="40" height="20" class="social-icon" viewBox="0 0 1792 1792"
 				xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1
 				14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271
@@ -38,7 +38,7 @@
 			</a>
 
 			<!-- Google Plus -->
-			<a href="#">
+			<a href="https://plus.google.com/+SkylerBirdWebDesignShallotte">
 				<svg width="45" height="20" class="social-icon" viewBox="0 0 1792 1792"
 				xmlns="http://www.w3.org/2000/svg"><path d="M1181 913q0 208-87 370.5t-248
 				254-369 91.5q-149 0-285-58t-234-156-156-234-58-285 58-285 156-234 234-156
@@ -49,7 +49,7 @@
 			</a>
 
 			<!-- Behance -->
-			<a href="#">
+			<a href="https://www.behance.net/skylerbird">
 				<svg width="45" height="20" class="social-icon" viewBox="0 0 1792 1792"
 				xmlns="http://www.w3.org/2000/svg"><path
 				d="M1720 339h-511v124h511v-124zm-252 426q-90 0-146 52.5t-62
@@ -63,7 +63,7 @@
 			</a>
 
 			<!-- Dribbble -->
-			<a href="#">
+			<a href="https://dribbble.com/SkylerBird">
 				<svg width="45" height="20" class="social-icon" viewBox="0 0 1792 1792"
 				xmlns="http://www.w3.org/2000/svg"><path
 				d="M1152 1500q-42-241-140-498h-2l-2 1q-16 6-43 16.5t-101 49-137 82-131
@@ -81,7 +81,7 @@
 			</a>
 
 			<!-- Codepen -->
-			<a href="#">
+			<a href="http://codepen.io/skylerbird/">
 				<svg width="45" height="20" class="social-icon" viewBox="0 0 1792 1792"
 				xmlns="http://www.w3.org/2000/svg"><path
 				d="M216 1169l603 402v-359l-334-223zm-62-144l193-129-193-129v258zm819
@@ -93,7 +93,7 @@
 			</a>
 
 			<!-- Github -->
-			<a href="#">
+			<a href="https://github.com/skylerbird">
 				<svg width="45" height="20" class="social-icon" viewBox="0 0 1792 1792"
 				xmlns="http://www.w3.org/2000/svg"><path
 				d="M704 1216q0 40-12.5 82t-43 76-72.5 34-72.5-34-43-76-12.5-82 12.5-82 43-76 72.5-34
@@ -109,7 +109,7 @@
 			</a>
 
 			<!-- LinkedIn -->
-			<a href="#">
+			<a href="https://www.linkedin.com/in/skylerbird">
 				<svg width="45" height="20" class="social-icon" viewBox="0 0 1792 1792"
 				xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1
 				73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5

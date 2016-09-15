@@ -182,7 +182,7 @@ body{overflow-x: hidden;}
 }
 
 //Position older posts button lower
-.homepage-content .nav-links{padding-top: $span_1;}
+//.homepage-content .nav-links{padding-top: $span_1;}
 
 //Sidebar Styles
 .widget-area{
@@ -368,6 +368,8 @@ footer{
 
 
 //Media queries
+
+//Navigation
 @media (max-width: 757px){
   #toggleS{
     height: $large;
@@ -421,4 +423,103 @@ footer{
 	}
 
 	.open{margin-top: $small;}
+}
+
+//Homepage media queries
+@media (max-width: 960px){
+	.homepage-content{
+		position: relative;
+		padding-bottom: $span_1;
+
+		hr,
+		article{width: $span_14;}
+
+		.entry-header,
+		.entry-content,
+		.entry-title,
+		p{width: $span_12;}
+
+		.entry-title{font-size: $medium;}
+
+		.nav-links{
+			position: absolute;
+			bottom: 0;
+			right: $span_1;
+			margin-top: $span_1;
+		}
+	}
+
+	.homepage-content article.has-post-thumbnail{
+		.entry-content{top:75px;}//equal specificity to line 168
+	}
+
+	//Sidebar
+	.widget-area{display: none;}
+}
+
+@media (max-width: 733px){
+	.homepage-content article,
+	.homepage-content article.has-post-thumbnail{
+		.entry-content{display: none;}
+	}
+
+	//footer
+	footer{
+	height: 200px;
+	overflow-x: hidden;
+
+		.social-links,
+		.mini-logo{
+			display: block;
+			float: none;
+			width: $span_16;
+			text-align: center;
+			margin: 0;
+		}
+
+		.mini-logo-sub{
+			padding: 0;
+			margin-left: 51px;
+		}
+	}
+}
+
+@media (max-width: 500px){
+	.homepage-content article.has-post-thumbnail,
+	.homepage-content article:not(.has-post-thumbnail){
+		height: $span_5;
+
+		.attachment-post-thumbnail,
+		.entry-meta{display: none;}
+
+		.entry-header, .entry-content{
+			display: block;
+			padding: 0;
+		}
+
+		.entry-title{font-size: $med-small;}
+	}
+
+	.homepage-content article.has-post-thumbnail{
+		.entry-content{top:45px;}//equal specificity to line 168
+	}
+
+	.homepage-content .nav-links{
+		width: $span_16;
+		height: $span_2;
+		display: block;
+		padding: $small 0 $small 0;
+		margin: 0;
+		text-align: center;
+		right: 0;
+		background-color: $secondaryColor;
+
+			a{
+				color: $bgColor;
+				width: 100%; //Make entire button clickable
+				display: block;
+			}
+	}
+
+	footer{margin-top: 0;}//Make button flush againstt footer
 }

@@ -215,8 +215,6 @@ body { overflow-x: hidden; }
 
 .homepage-content article:not(.has-post-thumbnail) .entry-meta { margin-top: -20px; }
 
-.homepage-content .nav-links { padding-top: 6.25vw; }
-
 .widget-area { display: block; position: absolute; right: 6.25vw; top: 25vw; width: 12.5vw; }
 
 #facebook, .fb-page { width: 12.5vw; }
@@ -287,6 +285,28 @@ footer .mini-logo .mini-logo-sub { font-size: 1.333rem; color: #0e82b0; width: 1
   .blogNav .social { display: block; padding: 0; margin-bottom: 25px; }
   .blogNav .mBreak { display: inline-block; }
   .open { margin-top: 1rem; } }
+
+@media (max-width: 960px) { .homepage-content { position: relative; padding-bottom: 6.25vw; }
+  .homepage-content hr, .homepage-content article { width: 88vw; }
+  .homepage-content .entry-header, .homepage-content .entry-content, .homepage-content .entry-title, .homepage-content p { width: 75.5vw; }
+  .homepage-content .entry-title { font-size: 1.777rem; }
+  .homepage-content .nav-links { position: absolute; bottom: 0; right: 6.25vw; margin-top: 6.25vw; }
+  .homepage-content article.has-post-thumbnail .entry-content { top: 75px; }
+  .widget-area { display: none; } }
+
+@media (max-width: 733px) { .homepage-content article .entry-content, .homepage-content article.has-post-thumbnail .entry-content { display: none; }
+  footer { height: 200px; overflow-x: hidden; }
+  footer .social-links, footer .mini-logo { display: block; float: none; width: 100vw; text-align: center; margin: 0; }
+  footer .mini-logo-sub { padding: 0; margin-left: 51px; } }
+
+@media (max-width: 500px) { .homepage-content article.has-post-thumbnail, .homepage-content article:not(.has-post-thumbnail) { height: 31.25vw; }
+  .homepage-content article.has-post-thumbnail .attachment-post-thumbnail, .homepage-content article.has-post-thumbnail .entry-meta, .homepage-content article:not(.has-post-thumbnail) .attachment-post-thumbnail, .homepage-content article:not(.has-post-thumbnail) .entry-meta { display: none; }
+  .homepage-content article.has-post-thumbnail .entry-header, .homepage-content article.has-post-thumbnail .entry-content, .homepage-content article:not(.has-post-thumbnail) .entry-header, .homepage-content article:not(.has-post-thumbnail) .entry-content { display: block; padding: 0; }
+  .homepage-content article.has-post-thumbnail .entry-title, .homepage-content article:not(.has-post-thumbnail) .entry-title { font-size: 1.333rem; }
+  .homepage-content article.has-post-thumbnail .entry-content { top: 45px; }
+  .homepage-content .nav-links { width: 100vw; height: 12.5vw; display: block; padding: 1rem 0 1rem 0; margin: 0; text-align: center; right: 0; background-color: #0e82b0; }
+  .homepage-content .nav-links a { color: #ffffff; width: 100%; display: block; }
+  footer { margin-top: 0; } }
 
 h1, h2, h3, h4, h5, h6 { clear: both; }
 

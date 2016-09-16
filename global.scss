@@ -292,7 +292,7 @@ body{overflow-x: hidden;}
 				.comment-form-comment,
 				.comments-area,
 				.comment-respond{
-					width: $span_10;
+					width: $span_14;
 				}
 
 				.comment-reply-title{
@@ -343,7 +343,7 @@ body{overflow-x: hidden;}
 					height: $med-large;
 					font-size: $small;
 					display: block;
-					margin: 0 $span_1 0 0;
+					margin: 0 $span_5 0 0;
 					color: $bgColor;
 					background-color: $primaryColor;
 					border: none;
@@ -382,14 +382,8 @@ body{overflow-x: hidden;}
 
 							.comment-author{
 								position: absolute;
-								width: $span_4;
+								width: $span_6;
 								top: -25px; //Make name appear above bubble
-							}
-
-							.comment-metadata{
-								position: absolute;
-								bottom: -25px;
-								width: $span_4;
 							}
 						}
 
@@ -397,6 +391,12 @@ body{overflow-x: hidden;}
 							float: right;
 							margin-right: 10px;//Align button with bubble
 						}
+				}
+
+				.comment-metadata{
+					position: absolute;
+					bottom: -25px;
+					width: $span_6;
 				}
 
 				.comment-body{
@@ -450,6 +450,12 @@ body{overflow-x: hidden;}
 							background-color: $primaryColor;
 							transform: rotate(45deg);
 						}
+				}
+
+				//Fix odd comments indenting
+				ol.children{
+					padding: 0;
+					margin: 0;
 				}
 }
 
@@ -553,7 +559,7 @@ body{overflow-x: hidden;}
 	}
 
 	//footer
-	footer{
+	.site-footer{
 	height: 200px;
 	overflow-x: hidden; //hide margin from mini-logo-sub
 
@@ -596,9 +602,9 @@ body{overflow-x: hidden;}
 	//Create mobile footer navigation button
 	.homepage-content .nav-links{
 		width: $span_16;
-		height: $span_2;
+		height: $span_3;
 		display: block;
-		padding: $small 0 $small 0;
+		padding: $medium 0 $small 0;
 		margin: 0;
 		text-align: center;
 		right: 0;
@@ -612,4 +618,83 @@ body{overflow-x: hidden;}
 	}
 
 	footer{margin-top: 0;} //Make button flush againstt footer
+}
+
+
+//Single Page Posts
+@media (max-width: 1200px){
+	.post-page{
+
+
+	.entry-content,
+	hr,
+	.comment-list,
+	.comment-list .comment-body //Equal specificity to earlier
+	{
+		width: $span_12;
+	}
+}
+}
+
+@media (max-width: 900px){
+	.post-page{
+		.comments-area{
+
+			textarea#comment{width:$span_12}
+
+			.comment-form-author,
+			.comment-form-email{
+				width: $span_5;
+				margin-right: $span_2;
+			}
+
+			.submit{
+				margin-right: $span_2;
+				width: $span_3;
+			}
+		}
+	}
+}
+
+@media (max-width: 640px){
+	.post-page{
+
+		article,
+		.entry-content,
+		hr{
+			width: $span_14;
+			margin-right: 0;
+		}
+
+		.comments-area{
+			margin-bottom: $span_3;//provide space between submit button and footer
+
+			.comment-list,
+			.comment-list .comment-body //Equal specificity to earlier
+			{
+				width: $span_14;
+			}
+
+			.comment-list .comment-metadata{display: none;}
+
+			textarea#comment,
+			.comment-form-author,
+			.comment-form-email{
+				width: $span_14;
+				margin-right: 0; //fix margin causing overflow-x issues
+			}
+
+			.comment-respond{position: relative;}
+
+			.submit{
+				width: $span_16;
+				height: $span_2;
+				margin: 0 0 $medium 0;
+				position: absolute;
+				left: -7%;
+				background-color: $secondaryColor;
+			}
+
+		}
+	}
 }

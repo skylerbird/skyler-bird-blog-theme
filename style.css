@@ -255,7 +255,7 @@ body { overflow-x: hidden; }
 
 .post-page .comments-area p.comment-notes { display: none; }
 
-.post-page .comments-area .comment-form-comment, .post-page .comments-area .comments-area, .post-page .comments-area .comment-respond { width: 63vw; }
+.post-page .comments-area .comment-form-comment, .post-page .comments-area .comments-area, .post-page .comments-area .comment-respond { width: 88vw; }
 
 .post-page .comments-area .comment-reply-title { margin: 3.157rem 0 2.369rem 0; }
 
@@ -273,7 +273,7 @@ body { overflow-x: hidden; }
 
 .post-page .comments-area textarea:focus, .post-page .comments-area input[type=text]:focus, .post-page .comments-area input[type=email]:focus { border: 1px solid #0e82b0; }
 
-.post-page .comments-area .submit { width: 12.5vw; height: 2.369rem; font-size: 1rem; display: block; margin: 0 6.25vw 0 0; color: #ffffff; background-color: #242424; border: none; padding: 0; float: right; }
+.post-page .comments-area .submit { width: 12.5vw; height: 2.369rem; font-size: 1rem; display: block; margin: 0 31.25vw 0 0; color: #ffffff; background-color: #242424; border: none; padding: 0; float: right; }
 
 .post-page .comments-area .submit:hover, .post-page .comments-area .submit:focus { background-color: #0e82b0; }
 
@@ -291,11 +291,11 @@ body { overflow-x: hidden; }
 
 .post-page .comment-list .comment .comment-meta a { color: #242424; }
 
-.post-page .comment-list .comment .comment-meta .comment-author { position: absolute; width: 25vw; top: -25px; }
-
-.post-page .comment-list .comment .comment-meta .comment-metadata { position: absolute; bottom: -25px; width: 25vw; }
+.post-page .comment-list .comment .comment-meta .comment-author { position: absolute; width: 37.5vw; top: -25px; }
 
 .post-page .comment-list .comment .reply { float: right; margin-right: 10px; }
+
+.post-page .comment-list .comment-metadata { position: absolute; bottom: -25px; width: 37.5vw; }
 
 .post-page .comment-list .comment-body { padding: 0; margin: 0; width: 43.75vw; position: relative; }
 
@@ -312,6 +312,8 @@ body { overflow-x: hidden; }
 .post-page .odd .comment-content a { color: #0e82b0; }
 
 .post-page .odd .comment-content ::after { content: ""; position: absolute; bottom: 2px; right: -2px; width: 10px; height: 8px; background-color: #242424; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+
+.post-page ol.children { padding: 0; margin: 0; }
 
 .site-content { padding-top: 6.25vw; }
 
@@ -335,18 +337,32 @@ body { overflow-x: hidden; }
   .widget-area { display: none; } }
 
 @media (max-width: 733px) { .homepage-content article .entry-content, .homepage-content article.has-post-thumbnail .entry-content { display: none; }
-  footer { height: 200px; overflow-x: hidden; }
-  footer .social-links, footer .mini-logo { display: block; float: none; width: 100vw; text-align: center; margin: 0; }
-  footer .mini-logo-sub { padding: 0; margin-left: 51px; } }
+  .site-footer { height: 200px; overflow-x: hidden; }
+  .site-footer .social-links, .site-footer .mini-logo { display: block; float: none; width: 100vw; text-align: center; margin: 0; }
+  .site-footer .mini-logo-sub { padding: 0; margin-left: 51px; } }
 
 @media (max-width: 500px) { .homepage-content article.has-post-thumbnail, .homepage-content article:not(.has-post-thumbnail) { height: 31.25vw; }
   .homepage-content article.has-post-thumbnail .attachment-post-thumbnail, .homepage-content article.has-post-thumbnail .entry-meta, .homepage-content article:not(.has-post-thumbnail) .attachment-post-thumbnail, .homepage-content article:not(.has-post-thumbnail) .entry-meta { display: none; }
   .homepage-content article.has-post-thumbnail .entry-header, .homepage-content article.has-post-thumbnail .entry-content, .homepage-content article:not(.has-post-thumbnail) .entry-header, .homepage-content article:not(.has-post-thumbnail) .entry-content { display: block; padding: 0; }
   .homepage-content article.has-post-thumbnail .entry-title, .homepage-content article:not(.has-post-thumbnail) .entry-title { font-size: 1.333rem; }
   .homepage-content article.has-post-thumbnail .entry-content { top: 45px; }
-  .homepage-content .nav-links { width: 100vw; height: 12.5vw; display: block; padding: 1rem 0 1rem 0; margin: 0; text-align: center; right: 0; background-color: #0e82b0; }
+  .homepage-content .nav-links { width: 100vw; height: 18.75vw; display: block; padding: 1.777rem 0 1rem 0; margin: 0; text-align: center; right: 0; background-color: #0e82b0; }
   .homepage-content .nav-links a { color: #ffffff; width: 100%; display: block; }
   footer { margin-top: 0; } }
+
+@media (max-width: 1200px) { .post-page .entry-content, .post-page hr, .post-page .comment-list, .post-page .comment-list .comment-body { width: 75.5vw; } }
+
+@media (max-width: 900px) { .post-page .comments-area textarea#comment { width: 75.5vw; }
+  .post-page .comments-area .comment-form-author, .post-page .comments-area .comment-form-email { width: 31.25vw; margin-right: 12.5vw; }
+  .post-page .comments-area .submit { margin-right: 12.5vw; width: 18.75vw; } }
+
+@media (max-width: 640px) { .post-page article, .post-page .entry-content, .post-page hr { width: 88vw; margin-right: 0; }
+  .post-page .comments-area { margin-bottom: 18.75vw; }
+  .post-page .comments-area .comment-list, .post-page .comments-area .comment-list .comment-body { width: 88vw; }
+  .post-page .comments-area .comment-list .comment-metadata { display: none; }
+  .post-page .comments-area textarea#comment, .post-page .comments-area .comment-form-author, .post-page .comments-area .comment-form-email { width: 88vw; margin-right: 0; }
+  .post-page .comments-area .comment-respond { position: relative; }
+  .post-page .comments-area .submit { width: 100vw; height: 12.5vw; margin: 0 0 1.777rem 0; position: absolute; left: -7%; background-color: #0e82b0; } }
 
 h1, h2, h3, h4, h5, h6 { clear: both; }
 

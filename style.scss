@@ -19,8 +19,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
-@import 'normalize.scss';
+@import 'scss/normalize.scss';
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-@import 'elements.scss';
-@import 'global.scss';
-@import 'typography.scss';
+@import 'scss/elements.scss';
+@import 'scss/global.scss';
+@import 'scss/typography.scss';

@@ -1,0 +1,52 @@
+//Variable Set
+$bgColor:        #ffffff;
+$primaryColor:   #242424;
+$secondaryColor: #0e82b0;
+
+$mainFont: 'Source Sans Pro', sans-serif;
+
+$ex-small:  0.75rem;
+$small:     1rem;
+$med-small: 1.333rem;
+$medium:    1.777rem;
+$med-large: 2.369rem;
+$large:     3.157rem;
+$ex-large:  5.61rem;
+$max:       7.478rem;
+
+$span_1:  6.25vw;
+$span_2:  12.5vw;
+$span_3:  18.75vw;
+$span_4:  25vw;
+$span_5:  31.25vw;
+$span_6:  37.5vw;
+$span_7:  43.75vw;
+$span_8:  50.25vw;
+$span_9:  56.75vw;
+$span_10: 63vw;
+$span_11: 69.25vw;
+$span_12: 75.5vw;
+$span_13: 81.75vw;
+$span_14: 88vw;
+$span_15: 94.25vw;
+$span_16: 100vw;
+
+//Universal Styles
+*{
+	transition: ease-in-out 0.3s;
+	box-sizing: border-box;
+}
+
+body{overflow-x: hidden;}
+
+.entry-date{color: $primaryColor;}
+
+//Wordpress Fixes
+.site-content{padding-top: $span_1;}
+
+//Imports
+@import 'header.scss';
+@import 'homepage.scss';
+@import 'single.scss';
+@import 'sidebar.scss';
+@import 'footer.scss';

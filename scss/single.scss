@@ -1,0 +1,283 @@
+//Individual post styles
+.post-page{
+	width: $span_16;
+
+		.attachment-post-thumbnail{display: none;}
+
+		article{
+			width: $span_14;
+			padding-left: $span_1;
+		}
+
+		.entry-title{
+			margin: 0;
+			padding-bottom: $small;
+		}
+
+		.entry-content{
+			width: $span_9;
+		}
+
+		hr{
+			margin: $med-large 0 $span_1 $span_1;
+			width: $span_9;
+		}
+
+//Comments styles
+		.comments-area{
+			width: $span_16;
+			padding-left: $span_1;
+
+				.comments-title{margin-bottom: -50px;}
+
+				p{margin: 0;} //Remove style from article
+
+				p.comment-notes{display: none;}
+
+				.comment-form-comment,
+				.comments-area,
+				.comment-respond{
+					width: $span_14;
+				}
+
+				.comment-reply-title{
+					margin: $large 0 $med-large 0;
+				}
+
+				.comment-form-author,
+				.comment-form-email{
+					width: $span_4;
+					margin:0 $span_1 0 0;
+					display: inline-block;
+
+						input{
+							width: $span_3;
+							font-size: $small;
+						}
+				}
+
+				input[type=text],
+				input[type=email]{
+					width: 100%; //Make input fields span entire column
+				}
+
+				label{
+					display: block;
+					font-weight: 700;
+					margin-bottom: 3px;
+				}
+
+				textarea#comment{width: $span_9;} //Make comment field span only 9 inside of a 10 wide column
+
+				textarea,
+				input[type=text],
+				input[type=email]{
+					border: 1px solid $primaryColor;
+					background-color: $bgColor;
+					border-radius: 0;
+					padding: 5px 5px;
+					margin-bottom: $med-large;
+
+						&:focus{
+							border: 1px solid $secondaryColor;
+						}
+				}
+
+				.submit{
+					width: $span_2;
+					height: $med-large;
+					font-size: $small;
+					display: block;
+					margin: 0 $span_5 0 0;
+					color: $bgColor;
+					background-color: $primaryColor;
+					border: none;
+					padding: 0;
+					float: right;
+
+						&:hover,
+						&:focus{background-color: $secondaryColor;}
+				}
+
+				ol.children{
+					list-style: none;
+
+					//Fix sub comments showing alternate tails
+					.odd .comment-content p::before{display: none;}
+
+					.even .comment-content p::after{display: none;}
+				}
+		}
+
+		.comment-list{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			width: $span_7;
+
+				.comment{
+					margin-top: 100px;
+
+					.comment-meta{
+						position: absolute;
+						height: 100%;
+						padding: $med-large 0 $med-large 0;
+
+							a{color: $primaryColor;}
+
+							.comment-author{
+								position: absolute;
+								width: $span_6;
+								top: -25px; //Make name appear above bubble
+							}
+						}
+
+						.reply{
+							float: right;
+							margin-right: 10px;//Align button with bubble
+						}
+				}
+
+				.comment-metadata{
+					position: absolute;
+					bottom: -25px;
+					width: $span_6;
+				}
+
+				.comment-body{
+					padding: 0;
+					margin: 0;
+					width: $span_7;
+					position: relative;
+				}
+
+				.avatar,
+				.comment-awaiting-moderation{display: none;}
+				}
+
+				.even .comment-content{
+					background-color: $secondaryColor;
+					color: $bgColor;
+					padding: $small;
+					position: relative;
+					border-radius: $small $small $small 3px;
+
+						a{color: $primaryColor;}
+
+						::before{
+							content: "";
+							position: absolute;
+							bottom: 2px;
+							left: -2px;
+							width: 8px;
+							height: 10px;
+							background-color: $secondaryColor;
+							transform: rotate(45deg);
+						}
+				}
+
+				.odd .comment-content{
+					background-color: $primaryColor;
+					color: $bgColor;
+					padding: $small;
+					position: relative;
+					border-radius: $small $small 3px $small;
+
+						a{color: $secondaryColor;}
+
+						::after{
+							content: "";
+							position: absolute;
+							bottom: 2px;
+							right: -2px;
+							width: 10px;
+							height: 8px;
+							background-color: $primaryColor;
+							transform: rotate(45deg);
+						}
+				}
+
+				//Fix odd comments indenting
+				ol.children{
+					padding: 0;
+					margin: 0;
+				}
+}
+
+//Single Page Posts
+@media (max-width: 1200px){
+	.post-page{
+
+
+		.entry-content,
+		hr,
+		.comment-list,
+		.comment-list .comment-body //Equal specificity to earlier
+		{
+			width: $span_12;
+		}
+	}
+}
+
+@media (max-width: 900px){
+	.post-page{
+		.comments-area{
+
+			textarea#comment{width:$span_12}
+
+			.comment-form-author,
+			.comment-form-email{
+				width: $span_5;
+				margin-right: $span_2;
+			}
+
+			.submit{
+				margin-right: $span_2;
+				width: $span_3;
+			}
+		}
+	}
+}
+
+@media (max-width: 640px){
+	.post-page{
+
+		article,
+		.entry-content,
+		hr{
+			width: $span_14;
+			margin-right: 0;
+		}
+
+		.comments-area{
+			margin-bottom: $span_3;//provide space between submit button and footer
+
+			.comment-list,
+			.comment-list .comment-body //Equal specificity to earlier
+			{
+				width: $span_14;
+			}
+
+			.comment-list .comment-metadata{display: none;}
+
+			textarea#comment,
+			.comment-form-author,
+			.comment-form-email{
+				width: $span_14;
+				margin-right: 0; //fix margin causing overflow-x issues
+			}
+
+			.comment-respond{position: relative;}
+
+			.submit{
+				width: $span_16;
+				height: $span_2;
+				margin: 0 0 $medium 0;
+				position: absolute;
+				left: -7%;
+				background-color: $secondaryColor;
+			}
+
+		}
+	}
+}

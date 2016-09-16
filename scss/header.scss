@@ -1,0 +1,133 @@
+//Navigation
+.blogNav{
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  background-color: $primaryColor;
+  color: $bgColor;
+  z-index: 3;
+	top: 0;
+
+
+	.navA{
+	  position: absolute;
+	  display: inline;
+	  height: 100%;
+	  width: 20px;
+	  background-color: $secondaryColor;
+	}
+
+  .navAl{left: 0;}
+
+  .navAr{right: 0;}
+
+	ul{margin: 25px 0 0px 55px;}
+
+	ul, li{
+	  list-style: none;
+	  display: inline-block;
+	  color: $bgColor;
+	  word-spacing: 25px;
+	  letter-spacing: 2px;
+	}
+
+  li:hover{color: $secondaryColor;}
+
+	.socialContainer{
+	  display: inline-block;
+	  float:right;
+	  margin-right: 105px;
+	}
+
+	.social{
+	  width: 35px;
+	  height: 35px;
+	  background-color: $bgColor;
+	  display: inline-block;
+	  margin: 10px 0 0 25px;
+	  border-radius: 20%;
+	  background-size: 25px 25px;
+	  background-repeat: no-repeat;
+	  background-position: center;
+	}
+
+	.social:hover{background-color: $secondaryColor;}
+
+	  #social1{background-image: url(http://www.skylerbird.com/img/facebook-f.svg);}
+
+	  #social2{background-image: url(http://www.skylerbird.com/img/twitter.svg);}
+
+	  #social3{background-image: url(http://www.skylerbird.com/img/instagram.svg);}
+
+	  #social4{
+	    background-image: url(http://www.skylerbird.com/img/behance.svg);
+	    background-size: 35px 25px;
+	  }
+}
+
+//Header Styles
+.header-image{
+	width: $span_16;
+	height: $span_3;
+	background-image: url(http://www.skylerbird.com/img/BG.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+
+//Media Queries
+//Navigation
+@media (max-width: 757px){
+  #toggleS{
+    height: $large;
+    width: $large;
+    background-color: $primaryColor;
+    display: block;
+    border-radius: $small;
+    position: fixed;
+    z-index: 3;
+    top: $small;
+    right: $small;
+    background-image: url(http://www.skylerbird.com/img/navicon.svg);
+    background-size: $med-large;
+    background-repeat: no-repeat;
+		background-position: center;
+  }
+
+  #toggleS:hover, #toggleS:focus{background-image: url(http://www.skylerbird.com/img/navicon-d.svg);}
+
+  .down{margin-top: 200px;}
+
+	.blogNav{
+	  height: auto;
+	  padding: 25px;
+	  width: 90%;
+	  left: 5%;
+	  margin-top: -500px;
+	  border-radius: $small;
+
+
+	  .navA{display:none;}
+
+	  ul, .socialContainer{
+	    margin: 0;
+	    padding: 0;
+	  }
+
+	  li{
+	    display: block;
+	    line-height: $med-large;
+	    padding: 0;
+	  }
+
+	  .social{
+	    display: block;
+	    padding: 0;
+	    margin-bottom: 25px;
+	  }
+
+		.mBreak{display: inline-block;}
+	}
+
+	.open{margin-top: $small;}
+}

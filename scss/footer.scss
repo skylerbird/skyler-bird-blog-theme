@@ -1,0 +1,49 @@
+//Footer navigation fix on larger screens
+@media (min-width: 960px){.homepage-content .nav-links{padding-top: $span_1;}}
+
+//Footer Styles
+.site-footer{
+	background-color: $primaryColor;
+	width: $span_16;
+	display: block;
+	height: 120px;
+	margin-top: $span_1;
+
+		.social-links{
+			width: $span_6;
+			margin-left: $span_1;
+			padding-top: $med-large;
+			display: inline-block;
+			float: left;
+		}
+
+		.social-icon{
+			height: 20px;
+			width: 45px;
+			display: inline-block;
+			fill: $bgColor;
+			padding-right: $small;
+
+			&:hover, &:focus{fill: $secondaryColor;}
+		}
+
+	.mini-logo{
+		width: $span_5;
+		display: inline-block;
+		float: right;
+		padding-top: $small;
+		margin-right: $span_1;
+		color: $bgColor;
+		font-size: $large;
+		text-align: right;
+
+			.mini-logo-sub{
+				font-size: $med-small;
+				color: $secondaryColor;
+				width: 100%;
+				display: block;
+				margin-top: -$small;
+				padding-right: 5px;
+			}
+	}
+}

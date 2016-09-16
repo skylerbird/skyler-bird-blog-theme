@@ -1,0 +1,16 @@
+//Sidebar Styles
+.widget-area{
+	display: block;
+	position: absolute;
+	right: $span_1;
+	top: $span_4;
+	width: $span_2;
+}
+
+#facebook,
+.fb-page{width: $span_2;}
+
+#timeline-widget{
+	width: $span_2;
+	height: 500px;
+}

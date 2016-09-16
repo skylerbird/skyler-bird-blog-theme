@@ -82,9 +82,7 @@ mark {
 }
 
 //Address inconsistent and variable font size in all browsers.
-small {
-  font-size: 80%;
-}
+small {font-size: 80%;}
 
 //Prevent `sub` and `sup` affecting `line-height` in all browsers.
 sub,
@@ -114,9 +112,7 @@ hr {
   height: 0;
 }
 
-/**
- * Contain overflow in all browsers.
- */
+//Contain overflow in all browsers.
 
 pre {overflow: auto;}
 
@@ -141,9 +137,9 @@ input,
 optgroup,
 select,
 textarea {
-  color: inherit; /* 1 */
-  font: inherit; /* 2 */
-  margin: 0; /* 3 */
+  color: inherit; //1
+  font: inherit; //2
+  margin: 0; //3
 }
 
 //Address `overflow` set to `hidden` in IE 8/9/10/11.
@@ -162,18 +158,16 @@ select {text-transform: none;}
 //Improve usability and consistency of cursor style between image-type
 //`input` and others.
 button,
-html input[type="button"], /* 1 */
+html input[type="button"], //1
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button; /* 2 */
-  cursor: pointer; /* 3 */
+  -webkit-appearance: button; //2
+  cursor: pointer; //3
 }
 
 //Re-set default cursor for disabled elements.
 button[disabled],
-html input[disabled] {
-  cursor: default;
-}
+html input[disabled] {cursor: default;}
 
 //Remove inner padding and border in Firefox 4+.
 button::-moz-focus-inner,
@@ -191,10 +185,9 @@ input {line-height: normal;}
 //2. Remove excess padding in IE 8/9/10.
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+  box-sizing: border-box; //1
+  padding: 0; //2
 }
-
 
 //Fix the cursor style for Chrome's increment/decrement buttons. For certain
 //`font-size` values of the `input`, it causes the cursor style of the
@@ -208,8 +201,8 @@ input[type="number"]::-webkit-outer-spin-button {
 //Address `appearance` set to `searchfield` in Safari and Chrome.
 //Address `box-sizing` set to `border-box` in Safari and Chrome.
 input[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  box-sizing: content-box; /* 2 */
+  -webkit-appearance: textfield; //1
+  box-sizing: content-box; //2
 }
 
 //Remove inner padding and search cancel button in Safari and Chrome on OS X.
@@ -230,8 +223,8 @@ fieldset {
 //1. Correct `color` not being inherited in IE 8/9/10/11.
 //2. Remove padding so people aren't caught out if they zero out fieldsets.
 legend {
-  border: 0; /* 1 */
-  padding: 0; /* 2 */
+  border: 0; //1
+  padding: 0; //2
 }
 
 //Remove default vertical scrollbar in IE 8/9/10/11.

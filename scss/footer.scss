@@ -1,6 +1,3 @@
-//Footer navigation fix on larger screens
-@media (min-width: 960px){.homepage-content .nav-links{padding-top: $span_1;}}
-
 //Footer Styles
 .site-footer{
 	background-color: $primaryColor;
@@ -46,4 +43,30 @@
 				padding-right: 5px;
 			}
 	}
+}
+
+@media (max-width: 960px){
+	//footer
+	.site-footer{
+		height: 200px;
+		overflow-x: hidden; //hide margin from mini-logo-sub
+
+		.social-links,
+		.mini-logo{
+			display: block;
+			float: none;
+			width: $span_16;
+			text-align: center;
+			margin: 0;
+		}
+
+		.mini-logo-sub{
+			padding: 0;
+			margin-left: 51px; //Properly sub with upper logo
+		}
+	}
+}
+
+@media (max-width: 500px){
+	.site-footer{margin-top: 0;} //Make button flush againstt footer
 }

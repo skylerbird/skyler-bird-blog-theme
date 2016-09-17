@@ -227,18 +227,16 @@ body { overflow-x: hidden; }
 
 .homepage-content article:not(.has-post-thumbnail) .entry-header, .homepage-content article:not(.has-post-thumbnail) .entry-content { padding-left: 0; }
 
+@media (min-width: 960px) { .homepage-content .nav-links { padding-top: 6.25vw; } }
+
 @media (max-width: 960px) { .homepage-content { position: relative; padding-bottom: 6.25vw; }
   .homepage-content hr, .homepage-content article { width: 88vw; }
   .homepage-content .entry-header, .homepage-content .entry-content, .homepage-content .entry-title, .homepage-content p { width: 75.5vw; }
   .homepage-content .entry-title { font-size: 1.777rem; }
   .homepage-content .nav-links { position: absolute; bottom: 0; right: 6.25vw; margin-top: 6.25vw; }
-  .homepage-content article.has-post-thumbnail .entry-content { top: 75px; }
-  .widget-area { display: none; } }
+  .homepage-content article.has-post-thumbnail .entry-content { top: 75px; } }
 
-@media (max-width: 733px) { .homepage-content article .entry-content, .homepage-content article.has-post-thumbnail .entry-content { display: none; }
-  .site-footer { height: 200px; overflow-x: hidden; }
-  .site-footer .social-links, .site-footer .mini-logo { display: block; float: none; width: 100vw; text-align: center; margin: 0; }
-  .site-footer .mini-logo-sub { padding: 0; margin-left: 51px; } }
+@media (max-width: 733px) { .homepage-content article .entry-content, .homepage-content article.has-post-thumbnail .entry-content { display: none; } }
 
 @media (max-width: 500px) { .homepage-content article.has-post-thumbnail, .homepage-content article:not(.has-post-thumbnail) { height: 31.25vw; }
   .homepage-content article.has-post-thumbnail .attachment-post-thumbnail, .homepage-content article.has-post-thumbnail .entry-meta, .homepage-content article:not(.has-post-thumbnail) .attachment-post-thumbnail, .homepage-content article:not(.has-post-thumbnail) .entry-meta { display: none; }
@@ -246,8 +244,7 @@ body { overflow-x: hidden; }
   .homepage-content article.has-post-thumbnail .entry-title, .homepage-content article:not(.has-post-thumbnail) .entry-title { font-size: 1.333rem; }
   .homepage-content article.has-post-thumbnail .entry-content { top: 45px; }
   .homepage-content .nav-links { width: 100vw; height: 18.75vw; display: block; padding: 1.777rem 0 1rem 0; margin: 0; text-align: center; right: 0; background-color: #0e82b0; }
-  .homepage-content .nav-links a { color: #ffffff; width: 100%; display: block; }
-  .site-footer { margin-top: 0; } }
+  .homepage-content .nav-links a { color: #ffffff; width: 100%; display: block; } }
 
 .post-page { width: 100vw; }
 
@@ -329,7 +326,7 @@ body { overflow-x: hidden; }
 
 .post-page ol.children { padding: 0; margin: 0; }
 
-@media (max-width: 1200px) { .post-page .entry-content, .post-page hr, .post-page .comment-list, .post-page .comment-list .comment-body { width: 75.5vw; } }
+@media (max-width: 1200px) { .post-page .entry-content, .post-page .comment-list .comment-body, .post-page hr, .post-page .comment-list { width: 75.5vw; } }
 
 @media (max-width: 900px) { .post-page .comments-area textarea#comment { width: 75.5vw; }
   .post-page .comments-area .comment-form-author, .post-page .comments-area .comment-form-email { width: 31.25vw; margin-right: 12.5vw; }
@@ -337,7 +334,7 @@ body { overflow-x: hidden; }
 
 @media (max-width: 640px) { .post-page article, .post-page .entry-content, .post-page hr { width: 88vw; margin-right: 0; }
   .post-page .comments-area { margin-bottom: 18.75vw; }
-  .post-page .comments-area .comment-list, .post-page .comments-area .comment-list .comment-body { width: 88vw; }
+  .post-page .comments-area .comment-list .comment-body, .post-page .comments-area .comment-list { width: 88vw; }
   .post-page .comments-area .comment-list .comment-metadata { display: none; }
   .post-page .comments-area textarea#comment, .post-page .comments-area .comment-form-author, .post-page .comments-area .comment-form-email { width: 88vw; margin-right: 0; }
   .post-page .comments-area .comment-respond { position: relative; }
@@ -349,7 +346,7 @@ body { overflow-x: hidden; }
 
 #timeline-widget { width: 12.5vw; height: 500px; }
 
-@media (min-width: 960px) { .homepage-content .nav-links { padding-top: 6.25vw; } }
+@media (max-width: 960px) { #secondary { display: none; } }
 
 .site-footer { background-color: #242424; width: 100vw; display: block; height: 120px; margin-top: 6.25vw; }
 
@@ -362,6 +359,12 @@ body { overflow-x: hidden; }
 .site-footer .mini-logo { width: 31.25vw; display: inline-block; float: right; padding-top: 1rem; margin-right: 6.25vw; color: #ffffff; font-size: 3.157rem; text-align: right; }
 
 .site-footer .mini-logo .mini-logo-sub { font-size: 1.333rem; color: #0e82b0; width: 100%; display: block; margin-top: -1rem; padding-right: 5px; }
+
+@media (max-width: 960px) { .site-footer { height: 200px; overflow-x: hidden; }
+  .site-footer .social-links, .site-footer .mini-logo { display: block; float: none; width: 100vw; text-align: center; margin: 0; }
+  .site-footer .mini-logo-sub { padding: 0; margin-left: 51px; } }
+
+@media (max-width: 500px) { .site-footer { margin-top: 0; } }
 
 h1, h2, h3, h4, h5, h6 { clear: both; }
 

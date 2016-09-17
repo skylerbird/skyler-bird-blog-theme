@@ -62,10 +62,14 @@
 	height: $span_2; //Fix image setting height for posts with an image
 
 	.entry-header,
-	.entry-content{padding-left: 0;}
+	.entry-content{padding-left: 0;} //Fix padding issue for posts with no image
 }
 
+//Page navigation fix on larger screens
+@media (min-width: 960px){.homepage-content .nav-links{padding-top: $span_1;}}
+
 //Media Queries
+
 //Homepage media queries
 @media (max-width: 960px){
 	.homepage-content{
@@ -91,37 +95,14 @@
 	}
 
 	.homepage-content article.has-post-thumbnail{
-		.entry-content{top:75px;}//equal specificity to line 168
+		.entry-content{top:75px;}//equal specificity to earlier
 	}
-
-	//Sidebar
-	.widget-area{display: none;}
 }
 
 @media (max-width: 733px){
 	.homepage-content article,
 	.homepage-content article.has-post-thumbnail{
 		.entry-content{display: none;}
-	}
-
-	//footer
-	.site-footer{
-	height: 200px;
-	overflow-x: hidden; //hide margin from mini-logo-sub
-
-		.social-links,
-		.mini-logo{
-			display: block;
-			float: none;
-			width: $span_16;
-			text-align: center;
-			margin: 0;
-		}
-
-		.mini-logo-sub{
-			padding: 0;
-			margin-left: 51px; //Properly sub with upper logo
-		}
 	}
 }
 
@@ -162,6 +143,4 @@
 				display: block;
 			}
 	}
-
-	.site-footer{margin-top: 0;} //Make button flush againstt footer
 }

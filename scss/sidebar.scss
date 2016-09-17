@@ -14,3 +14,8 @@
 	width: $span_2;
 	height: 500px;
 }
+
+@media (max-width: 960px){
+
+	#secondary{display: none;} //Hide sidebar when screen is too small
+}

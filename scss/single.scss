@@ -14,9 +14,7 @@
 			padding-bottom: $small;
 		}
 
-		.entry-content{
-			width: $span_9;
-		}
+		.entry-content{width: $span_9;}
 
 		hr{
 			margin: $med-large 0 $span_1 $span_1;
@@ -36,13 +34,9 @@
 
 				.comment-form-comment,
 				.comments-area,
-				.comment-respond{
-					width: $span_14;
-				}
+				.comment-respond{width: $span_14;}
 
-				.comment-reply-title{
-					margin: $large 0 $med-large 0;
-				}
+				.comment-reply-title{margin: $large 0 $med-large 0;}
 
 				.comment-form-author,
 				.comment-form-email{
@@ -57,9 +51,7 @@
 				}
 
 				input[type=text],
-				input[type=email]{
-					width: 100%; //Make input fields span entire column
-				}
+				input[type=email]{width: 100%;} //Make input fields span entire column
 
 				label{
 					display: block;
@@ -78,9 +70,7 @@
 					padding: 5px 5px;
 					margin-bottom: $med-large;
 
-						&:focus{
-							border: 1px solid $secondaryColor;
-						}
+						&:focus{border: 1px solid $secondaryColor;}
 				}
 
 				.submit{
@@ -208,14 +198,10 @@
 @media (max-width: 1200px){
 	.post-page{
 
-
 		.entry-content,
+		.comment-list .comment-body, //Equal specificity to earlier
 		hr,
-		.comment-list,
-		.comment-list .comment-body //Equal specificity to earlier
-		{
-			width: $span_12;
-		}
+		.comment-list{width: $span_12;}
 	}
 }
 
@@ -252,11 +238,8 @@
 		.comments-area{
 			margin-bottom: $span_3;//provide space between submit button and footer
 
-			.comment-list,
-			.comment-list .comment-body //Equal specificity to earlier
-			{
-				width: $span_14;
-			}
+			.comment-list .comment-body, //Equal specificity to earlier
+			.comment-list{width: $span_14;}
 
 			.comment-list .comment-metadata{display: none;}
 
@@ -277,7 +260,6 @@
 				left: -7%;
 				background-color: $secondaryColor;
 			}
-
 		}
 	}
 }

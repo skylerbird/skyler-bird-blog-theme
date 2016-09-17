@@ -74,8 +74,8 @@
 	background-position: center;
 }
 
-
 //Media Queries
+
 //Navigation
 @media (max-width: 757px){
   #toggleS{
@@ -109,7 +109,8 @@
 
 	  .navA{display:none;}
 
-	  ul, .socialContainer{
+	  ul,
+    .socialContainer{
 	    margin: 0;
 	    padding: 0;
 	  }

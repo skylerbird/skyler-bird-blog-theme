@@ -1,0 +1,16 @@
+.error404{
+
+  .site-content{width: $span_16;}
+
+  h1,
+  p{
+    width: $span_16;
+    padding: 0 $span_1 0 $span_1;
+    text-align: center;
+  }
+
+  .site-footer{
+    position: fixed;
+    bottom: 0;
+  }
+}

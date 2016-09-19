@@ -1,5 +1,5 @@
 .homepage-content{
-	article{
+	article {
 	margin: 0 0 0 $span_1;
 	width: $span_10;
 	position: relative;
@@ -60,9 +60,6 @@
 //Styles for posts without a featured image
 .homepage-content article:not(.has-post-thumbnail){
 	height: $span_2; //Fix image setting height for posts with an image
-
-	.entry-header,
-	.entry-content{padding-left: 0;} //Fix padding issue for posts with no image
 }
 
 //Page navigation fix on larger screens
@@ -108,7 +105,8 @@
 
 @media (max-width: 500px){
 	.homepage-content article.has-post-thumbnail,
-	.homepage-content article:not(.has-post-thumbnail){
+	.homepage-content article:not(.has-post-thumbnail)
+	{
 		height: $span_5; //Allocate height for post content to be seen
 
 		.attachment-post-thumbnail,
@@ -129,10 +127,10 @@
 	//Create mobile footer navigation button
 	.homepage-content .nav-links{
 		width: $span_16;
-		height: $span_3;
+		height: $span_2;
 		display: block;
-		padding: $medium 0 $small 0;
-		margin: 0;
+		padding: $small 0 $small 0;
+		margin: 0 0 $span_1 0; //Raise button above footer
 		text-align: center;
 		right: 0;
 		background-color: $secondaryColor;
@@ -143,4 +141,7 @@
 				display: block;
 			}
 	}
+
+	//Hide last hr and add more white space
+	.homepage-content .site-main{padding-bottom: $span_1;}
 }

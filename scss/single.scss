@@ -4,6 +4,8 @@
 
 		.attachment-post-thumbnail{display: none;}
 
+		.entry-title{line-height: 1em;}
+
 		article{
 			width: $span_14;
 			padding-left: $span_1;
@@ -207,6 +209,7 @@
 
 @media (max-width: 900px){
 	.post-page{
+
 		.comments-area{
 
 			textarea#comment{width:$span_12}

@@ -225,8 +225,6 @@ body { overflow-x: hidden; }
 
 .homepage-content article:not(.has-post-thumbnail) { height: 12.5vw; }
 
-.homepage-content article:not(.has-post-thumbnail) .entry-header, .homepage-content article:not(.has-post-thumbnail) .entry-content { padding-left: 0; }
-
 @media (min-width: 960px) { .homepage-content .nav-links { padding-top: 6.25vw; } }
 
 @media (max-width: 960px) { .homepage-content { position: relative; padding-bottom: 6.25vw; }
@@ -243,12 +241,15 @@ body { overflow-x: hidden; }
   .homepage-content article.has-post-thumbnail .entry-header, .homepage-content article.has-post-thumbnail .entry-content, .homepage-content article:not(.has-post-thumbnail) .entry-header, .homepage-content article:not(.has-post-thumbnail) .entry-content { display: block; padding: 0; }
   .homepage-content article.has-post-thumbnail .entry-title, .homepage-content article:not(.has-post-thumbnail) .entry-title { font-size: 1.333rem; }
   .homepage-content article.has-post-thumbnail .entry-content { top: 45px; }
-  .homepage-content .nav-links { width: 100vw; height: 18.75vw; display: block; padding: 1.777rem 0 1rem 0; margin: 0; text-align: center; right: 0; background-color: #0e82b0; }
-  .homepage-content .nav-links a { color: #ffffff; width: 100%; display: block; } }
+  .homepage-content .nav-links { width: 100vw; height: 12.5vw; display: block; padding: 1rem 0 1rem 0; margin: 0 0 6.25vw 0; text-align: center; right: 0; background-color: #0e82b0; }
+  .homepage-content .nav-links a { color: #ffffff; width: 100%; display: block; }
+  .homepage-content .site-main { padding-bottom: 6.25vw; } }
 
 .post-page { width: 100vw; }
 
 .post-page .attachment-post-thumbnail { display: none; }
+
+.post-page .entry-title { line-height: 1em; }
 
 .post-page article { width: 88vw; padding-left: 6.25vw; }
 
@@ -339,6 +340,12 @@ body { overflow-x: hidden; }
   .post-page .comments-area textarea#comment, .post-page .comments-area .comment-form-author, .post-page .comments-area .comment-form-email { width: 88vw; margin-right: 0; }
   .post-page .comments-area .comment-respond { position: relative; }
   .post-page .comments-area .submit { width: 100vw; height: 12.5vw; margin: 0 0 1.777rem 0; position: absolute; left: -7%; background-color: #0e82b0; } }
+
+.error404 .site-content { width: 100vw; }
+
+.error404 h1, .error404 p { width: 100vw; padding: 0 6.25vw 0 6.25vw; text-align: center; }
+
+.error404 .site-footer { position: fixed; bottom: 0; }
 
 .widget-area { display: block; position: absolute; right: 6.25vw; top: 25vw; width: 12.5vw; }
 

@@ -130,7 +130,7 @@
 <?php wp_footer(); ?>
 <!--Navigation JS -->
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="http://www.skylerbird.com/js/nav.js"></script>
+<script src="http://www.skylerbird.com/js/function-dist.js"></script>
 
 <!--Facebook Javascript-->
 <div id="fb-root"></div>

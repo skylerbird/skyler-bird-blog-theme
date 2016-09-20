@@ -37,7 +37,11 @@ $span_16: 100vw;
 	box-sizing: border-box;
 }
 
-body{overflow-x: hidden;}
+body{
+	overflow-x: hidden;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
 
 .entry-date{color: $primaryColor;}
 

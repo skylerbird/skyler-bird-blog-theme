@@ -13,4 +13,6 @@
     position: fixed;
     bottom: 0;
   }
+
+  @media (max-width: 400px){h1{font-size: $med-large;}}
 }

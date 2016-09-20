@@ -156,7 +156,7 @@ table { margin: 0 0 1.5em; width: 100%; }
 
 * { transition: ease-in-out 0.3s; box-sizing: border-box; }
 
-body { overflow-x: hidden; }
+body { overflow-x: hidden; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
 
 .entry-date { color: #242424; }
 
@@ -213,7 +213,7 @@ body { overflow-x: hidden; }
 
 .homepage-content article .entry-header { position: absolute; top: 0; padding-left: 3%; width: 43.75vw; }
 
-.homepage-content article .entry-content { width: 43.75vw; position: absolute; top: 95px; padding-left: 3%; background-color: #ffffff; }
+.homepage-content article .entry-content { width: 43.75vw; position: absolute; top: 95px; padding: 0 0 3% 3%; background-color: #ffffff; }
 
 .homepage-content article .entry-content p { padding: 0; margin: 0; }
 
@@ -346,6 +346,8 @@ body { overflow-x: hidden; }
 .error404 h1, .error404 p { width: 100vw; padding: 0 6.25vw 0 6.25vw; text-align: center; }
 
 .error404 .site-footer { position: fixed; bottom: 0; }
+
+@media (max-width: 400px) { .error404 h1 { font-size: 2.369rem; } }
 
 .widget-area { display: block; position: absolute; right: 6.25vw; top: 25vw; width: 12.5vw; }
 

@@ -23,8 +23,6 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 <link rel="apple-touch-icon" href="http://www.skylerbird.com/apple-touch-icon.png">
-
-<script async src="http://www.skylerbird.com/js/modernizr-custom.js"></script>
 <?php wp_head(); ?>
 </head>
 

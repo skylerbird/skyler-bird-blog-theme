@@ -1,4 +1,6 @@
 .homepage-content{
+	min-height: 700px;
+
 	article {
 	margin: 0 0 0 $span_1;
 	width: $span_10;
@@ -71,6 +73,7 @@
 @media (max-width: 960px){
 	.homepage-content{
 		position: relative;
+		min-height: 0; //reset min-height for sidebar
 		padding-bottom: $span_1; //Allocate room for older posts button
 
 		hr,

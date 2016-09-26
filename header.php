@@ -33,7 +33,7 @@
 	            <div class="navA navAr"></div>
 
 	            <ul>
-	              <a href="localhost/sbblog"><li>BLOG</li></a>
+	              <a href="http://www.skylerbird.com/blog"><li>BLOG</li></a>
 	              <a href="http://www.skylerbird.com/"><li>PROFILE</li></a>
 	              <a href="http://www.skylerbird.com/#contact"><li>CONTACT</li></a>
 	            </ul>

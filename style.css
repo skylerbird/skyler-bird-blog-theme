@@ -203,6 +203,8 @@ body { overflow-x: hidden; text-rendering: optimizeLegibility; -webkit-font-smoo
   .blogNav .mBreak { display: inline-block; }
   .open { margin-top: 1rem; } }
 
+.homepage-content { min-height: 700px; }
+
 .homepage-content article { margin: 0 0 0 6.25vw; width: 63vw; position: relative; overflow: hidden; }
 
 .homepage-content article .entry-header, .homepage-content article .entry-meta, .homepage-content article .entry-content, .homepage-content article .attachment-post-thumbnail { display: inline-block; }
@@ -227,7 +229,7 @@ body { overflow-x: hidden; text-rendering: optimizeLegibility; -webkit-font-smoo
 
 @media (min-width: 960px) { .homepage-content .nav-links { padding-top: 6.25vw; } }
 
-@media (max-width: 960px) { .homepage-content { position: relative; padding-bottom: 6.25vw; }
+@media (max-width: 960px) { .homepage-content { position: relative; min-height: 0; padding-bottom: 6.25vw; }
   .homepage-content hr, .homepage-content article { width: 88vw; }
   .homepage-content .entry-header, .homepage-content .entry-content, .homepage-content .entry-title, .homepage-content p { width: 75.5vw; }
   .homepage-content .entry-title { font-size: 1.777rem; }

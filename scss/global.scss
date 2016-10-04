@@ -45,6 +45,11 @@ body{
 
 .entry-date{color: $primaryColor;}
 
+.entry-meta{
+	font-size: $ex-small;
+	font-weight: 100;
+}
+
 //Wordpress Fixes
 .site-content{padding-top: $span_1;}
 

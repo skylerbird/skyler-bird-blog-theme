@@ -160,6 +160,8 @@ body { overflow-x: hidden; text-rendering: optimizeLegibility; -webkit-font-smoo
 
 .entry-date { color: #242424; }
 
+.entry-meta { font-size: 0.75rem; font-weight: 100; }
+
 .site-content { padding-top: 6.25vw; }
 
 .blogNav { position: fixed; width: 100%; height: 55px; background-color: #242424; color: #ffffff; z-index: 3; top: 0; }
@@ -219,8 +221,6 @@ body { overflow-x: hidden; text-rendering: optimizeLegibility; -webkit-font-smoo
 
 .homepage-content article .entry-content p { padding: 0; margin: 0; }
 
-.homepage-content article .entry-meta { font-size: 0.75rem; font-weight: 100; }
-
 .homepage-content .entry-content img { display: none; }
 
 .homepage-content hr { width: 56.75vw; float: left; margin: 3.125vw 0 3.125vw 6.25vw; }
@@ -255,7 +255,7 @@ body { overflow-x: hidden; text-rendering: optimizeLegibility; -webkit-font-smoo
 
 .post-page article { width: 88vw; padding-left: 6.25vw; }
 
-.post-page .entry-title { margin: 0; padding-bottom: 1rem; }
+.post-page .entry-title { margin: 0; padding-bottom: 5px; }
 
 .post-page .entry-content { width: 56.75vw; }
 
